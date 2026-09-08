@@ -6,10 +6,12 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "sanity build",
+    "postbuild": "sanity typegen generate",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
     "dev": "sanity dev",
-    "start": "sanity start"
+    "start": "sanity start",
+    "typegen": "sanity schemas extract --force && sanity typegen generate"
   },
   "keywords": [
     "sanity"

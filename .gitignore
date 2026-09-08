@@ -25,5 +25,8 @@
 # Typescript
 *.tsbuildinfo
 
+# Intermediate schema for TypeGen; generated types live in the frontend repository
+/schema.json
+
 # Dotenv and similar local-only files
 *.local

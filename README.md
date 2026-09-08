@@ -1,5 +1,24 @@
 # Sanity Clean Content Studio
 
+## Frontend types
+
+Run `npm run typegen` to extract the local schema and generate types for the
+sibling `../mhwd-next-starter` frontend. No content fetch or API token is needed
+for type generation. Dependencies must be installed in both projects.
+
+Configuration lives in `sanity.cli.ts`. Schema extraction and TypeGen also run
+automatically during `npm run dev`. `npm run build` extracts the schema, then
+the `postbuild` script generates types. Restart an existing dev server after
+changing this configuration.
+
+Queries: `../mhwd-next-starter/src/sanity/lib/queries.ts`.
+Generated types: `../mhwd-next-starter/src/sanity/types.ts` (include in frontend
+commits; do not edit manually). The intermediate `schema.json` is ignored here.
+
+Required field validation is reflected in the generated types. These types
+assume published, validated content, not incomplete draft previews. Update the
+relative paths in `sanity.cli.ts` if either sibling folder is renamed.
+
 Congratulations, you have now installed the Sanity Content Studio, an open-source real-time content editing environment connected to the Sanity backend.
 
 Now you can do the following things:
