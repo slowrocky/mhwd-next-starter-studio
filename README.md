@@ -37,6 +37,14 @@ published service appears on the site only when its status is `Aktívna`; use
 `Skrytá` to keep content in Studio without publishing it to visitors. Active
 services link from `/sluzby` to `/sluzby/[slug]`.
 
+## References
+
+`Referencia` is the reusable case study model used by the frontend's
+`/referencie` page. Its Sanity type is `caseStudy` because `reference` is a
+reserved Sanity type name. Published records with status `Aktívna` appear in
+the listing, detail pages and sitemap; `Skrytá` records remain available in
+Studio without being exposed publicly.
+
 Congratulations, you have now installed the Sanity Content Studio, an open-source real-time content editing environment connected to the Sanity backend.
 
 Now you can do the following things:
