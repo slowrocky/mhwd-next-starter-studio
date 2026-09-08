@@ -30,6 +30,12 @@ For a new client, create it from this item, complete each section and publish.
 The frontend falls back to its checked-in starter defaults until the document is
 published, so a new project still builds without CMS content.
 
+## Services
+
+`Služba` is the reusable service model for the frontend's `/sluzby` page. A
+published service appears on the site only when its status is `Aktívna`; use
+`Skrytá` to keep content in Studio without publishing it to visitors.
+
 Congratulations, you have now installed the Sanity Content Studio, an open-source real-time content editing environment connected to the Sanity backend.
 
 Now you can do the following things:
