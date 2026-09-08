@@ -19,6 +19,17 @@ Required field validation is reflected in the generated types. These types
 assume published, validated content, not incomplete draft previews. Update the
 relative paths in `sanity.cli.ts` if either sibling folder is renamed.
 
+## Site settings
+
+`Nastavenia webu` is a singleton with the fixed ID `siteSettings`. It contains
+the site identity, contact details, navigation and social links consumed by the
+sibling frontend. The custom Studio structure exposes one settings item and
+prevents duplicate settings documents from appearing in normal document lists.
+
+For a new client, create it from this item, complete each section and publish.
+The frontend falls back to its checked-in starter defaults until the document is
+published, so a new project still builds without CMS content.
+
 Congratulations, you have now installed the Sanity Content Studio, an open-source real-time content editing environment connected to the Sanity backend.
 
 Now you can do the following things:
