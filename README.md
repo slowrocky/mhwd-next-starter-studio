@@ -34,7 +34,8 @@ published, so a new project still builds without CMS content.
 
 `Služba` is the reusable service model for the frontend's `/sluzby` page. A
 published service appears on the site only when its status is `Aktívna`; use
-`Skrytá` to keep content in Studio without publishing it to visitors.
+`Skrytá` to keep content in Studio without publishing it to visitors. Active
+services link from `/sluzby` to `/sluzby/[slug]`.
 
 Congratulations, you have now installed the Sanity Content Studio, an open-source real-time content editing environment connected to the Sanity backend.
 
